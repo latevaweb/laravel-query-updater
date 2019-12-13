@@ -1,0 +1,56 @@
+{
+  "name": "mguinea/laravel-query-updater",
+  "description": "Easily update Eloquent models from put API requests without losing data",
+  "keywords": [
+    "laravel",
+    "api",
+    "rest",
+    "keep data",
+    "laravel-query-updater"
+  ],
+  "homepage": "https://github.com/mguinea/laravel-query-updater",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Marc Guinea",
+      "email": "develop.marcguinea@gmail.com",
+      "homepage": "https://www.marcguinea.com",
+      "role": "Developer"
+    }
+  ],
+  "require": {
+    "php": "^7.1",
+    "illuminate/database": "^6.0",
+    "illuminate/http": "^6.0",
+    "illuminate/support": "^6.0"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^7.0|^8.0",
+    "orchestra/testbench": "^4.0",
+    "ext-json": "*"
+  },
+  "autoload": {
+    "psr-4": {
+      "Mguinea\\QueryUpdater\\": "src"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Mguinea\\QueryUpdater\\Tests\\": "tests"
+    }
+  },
+  "scripts": {
+    "test": "vendor/bin/phpunit",
+    "test-coverage": "phpunit --coverage-html coverage"
+  },
+  "config": {
+    "sort-packages": true
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Mguinea\\QueryUpdater\\QueryUpdaterServiceProvider"
+      ]
+    }
+  }
+}
