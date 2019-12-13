@@ -19,11 +19,11 @@ class QueryUpdater
 
     private function toData($request): array
     {
-        if($request instanceof Request) {
+        if ($request instanceof Request) {
             return $request->all();
         }
 
-        if(is_array($request)) {
+        if (is_array($request)) {
             return $request;
         }
 
@@ -39,8 +39,8 @@ class QueryUpdater
     {
         $fields = collect($fields);
 
-        $fields->each(function($field) {
-            if($this->fieldExists($field)) {
+        $fields->each(function ($field) {
+            if ($this->fieldExists($field)) {
                 $this->model->{$field} = $this->data[$field];
             }
         });

@@ -6,6 +6,5 @@ class KeepDefault
 {
     public static function keep($field)
     {
-
     }
 }

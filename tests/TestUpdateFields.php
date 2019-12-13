@@ -16,7 +16,7 @@ class TestUpdateFields extends TestCase
     {
         QueryUpdater::for($this->user, ['name' => 'Anna'])
             ->updateFields([
-                'name'
+                'name',
             ])
             ->save();
 
@@ -28,7 +28,7 @@ class TestUpdateFields extends TestCase
         QueryUpdater::for($this->user, ['name' => 'Anna', 'email' => null])
             ->updateFields([
                 'name',
-                KeepDefault::keep('email')
+                KeepDefault::keep('email'),
             ])
             ->save();
 

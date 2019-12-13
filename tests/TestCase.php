@@ -2,8 +2,8 @@
 
 namespace LaTevaWeb\QueryUpdater\Tests;
 
-use Orchestra\Testbench\TestCase as Orchestra;
 use Illuminate\Database\Schema\Blueprint;
+use Orchestra\Testbench\TestCase as Orchestra;
 
 abstract class TestCase extends Orchestra
 {
@@ -47,7 +47,7 @@ abstract class TestCase extends Orchestra
         $this->user = User::create([
            'name' => 'Marc',
            'email' => 'marc@latevaweb.com',
-           'password' => bcrypt('secret')
+           'password' => bcrypt('secret'),
         ]);
     }
 }
