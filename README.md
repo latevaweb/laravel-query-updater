@@ -4,6 +4,7 @@
 [![Code Coverage](https://scrutinizer-ci.com/g/latevaweb/laravel-query-updater/badges/coverage.png?b=master)](https://scrutinizer-ci.com/g/latevaweb/laravel-query-updater/?branch=master)
 [![Build Status](https://scrutinizer-ci.com/g/latevaweb/laravel-query-updater/badges/build.png?b=master)](https://scrutinizer-ci.com/g/latevaweb/laravel-query-updater/build-status/master)
 [![StyleCI](https://github.styleci.io/repos/227821179/shield?branch=master)](https://github.styleci.io/repos/227821179)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 This package allows you to update fields and relations based on a request without losing data not send.
 
