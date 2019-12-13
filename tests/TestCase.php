@@ -1,6 +1,6 @@
 <?php
 
-namespace Mguinea\QueryUpdater\Tests;
+namespace LaTevaWeb\QueryUpdater\Tests;
 
 use Orchestra\Testbench\TestCase as Orchestra;
 use Illuminate\Database\Schema\Blueprint;
@@ -24,7 +24,7 @@ abstract class TestCase extends Orchestra
     protected function getPackageProviders($app)
     {
         return [
-            \Mguinea\QueryUpdater\QueryUpdaterServiceProvider::class,
+            \LaTevaWeb\QueryUpdater\QueryUpdaterServiceProvider::class,
         ];
     }
 
@@ -46,7 +46,7 @@ abstract class TestCase extends Orchestra
         // Create user to manage updates
         $this->user = User::create([
            'name' => 'Marc',
-           'email' => 'develop.marcguinea@gmail.com',
+           'email' => 'marc@latevaweb.com',
            'password' => bcrypt('secret')
         ]);
     }

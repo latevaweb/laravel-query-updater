@@ -1,6 +1,6 @@
 <?php
 
-namespace Mguinea\QueryUpdater;
+namespace LaTevaWeb\QueryUpdater;
 
 use Illuminate\Support\ServiceProvider;
 

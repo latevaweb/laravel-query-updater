@@ -1,9 +1,9 @@
 <?php
 
-namespace Mguinea\QueryUpdater\Tests;
+namespace LaTevaWeb\QueryUpdater\Tests;
 
-use Mguinea\QueryUpdater\KeepDefault;
-use Mguinea\QueryUpdater\QueryUpdater;
+use LaTevaWeb\QueryUpdater\KeepDefault;
+use LaTevaWeb\QueryUpdater\QueryUpdater;
 
 class TestUpdateFields extends TestCase
 {

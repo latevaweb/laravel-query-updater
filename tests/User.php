@@ -1,6 +1,6 @@
 <?php
 
-namespace Mguinea\QueryUpdater\Tests;
+namespace LaTevaWeb\QueryUpdater\Tests;
 
 use Illuminate\Auth\Authenticatable;
 use Illuminate\Database\Eloquent\Model;

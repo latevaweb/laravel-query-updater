@@ -1,5 +1,5 @@
 {
-  "name": "mguinea/laravel-query-updater",
+  "name": "latevaweb/laravel-query-updater",
   "description": "Easily update Eloquent models from put API requests without losing data",
   "keywords": [
     "laravel",
@@ -8,13 +8,13 @@
     "keep data",
     "laravel-query-updater"
   ],
-  "homepage": "https://github.com/mguinea/laravel-query-updater",
+  "homepage": "https://github.com/latevaweb/laravel-query-updater",
   "license": "MIT",
   "authors": [
     {
       "name": "Marc Guinea",
-      "email": "develop.marcguinea@gmail.com",
-      "homepage": "https://www.marcguinea.com",
+      "email": "marc@latevaweb.com",
+      "homepage": "https://www.latevaweb.com",
       "role": "Developer"
     }
   ],
@@ -31,12 +31,12 @@
   },
   "autoload": {
     "psr-4": {
-      "Mguinea\\QueryUpdater\\": "src"
+      "LaTevaWeb\\QueryUpdater\\": "src"
     }
   },
   "autoload-dev": {
     "psr-4": {
-      "Mguinea\\QueryUpdater\\Tests\\": "tests"
+      "LaTevaWeb\\QueryUpdater\\Tests\\": "tests"
     }
   },
   "scripts": {
@@ -49,7 +49,7 @@
   "extra": {
     "laravel": {
       "providers": [
-        "Mguinea\\QueryUpdater\\QueryUpdaterServiceProvider"
+        "LaTevaWeb\\QueryUpdater\\QueryUpdaterServiceProvider"
       ]
     }
   }
