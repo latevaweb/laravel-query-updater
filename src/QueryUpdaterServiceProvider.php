@@ -11,14 +11,11 @@ class QueryUpdaterServiceProvider extends ServiceProvider
      *
      * @return void
      */
-
     public function boot()
     {
         $this->publishes([
-            __DIR__ . '/../config/query-updater.php' => config_path('query-updater.php'),
+            __DIR__.'/../config/query-updater.php' => config_path('query-updater.php'),
         ], 'query-updater');
-
-
     }
 
     /**
@@ -28,6 +25,6 @@ class QueryUpdaterServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        $this->mergeConfigFrom(__DIR__ . '/../config/query-updater.php', 'query-updater');
+        $this->mergeConfigFrom(__DIR__.'/../config/query-updater.php', 'query-updater');
     }
 }
