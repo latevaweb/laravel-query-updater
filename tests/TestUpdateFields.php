@@ -27,11 +27,11 @@ class TestUpdateFields extends TestCase
     {
         QueryUpdater::for($this->user, [
             'name' => 'Anna',
-            'email' => 'marc@latevaweb.com'
+            'email' => 'marc@latevaweb.com',
         ])
         ->updateFields([
             'name',
-            'email'
+            'email',
         ])
         ->save();
 
@@ -43,10 +43,10 @@ class TestUpdateFields extends TestCase
     {
         QueryUpdater::for($this->user, [
             'name' => 'Anna',
-            'email' => 'marc@latevaweb.com'
+            'email' => 'marc@latevaweb.com',
         ])
         ->updateFields([
-            'email'
+            'email',
         ])
         ->save();
 
@@ -57,10 +57,10 @@ class TestUpdateFields extends TestCase
     public function testUpdateKeepingStoredValue()
     {
         QueryUpdater::for($this->user, [
-            'name' => null
+            'name' => null,
         ])
         ->updateFields([
-            KeepStored::field('name')
+            KeepStored::field('name'),
         ])
         ->save();
 

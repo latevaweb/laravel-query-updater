@@ -66,7 +66,7 @@ class QueryUpdater
     }
 
     /**
-     * Compose array of fields (string or object) to array of AbstractField objects
+     * Compose array of fields (string or object) to array of AbstractField objects.
      *
      * @param array
      *
@@ -82,12 +82,14 @@ class QueryUpdater
                 } else {
                     if (is_string($field)) {
                         $this->setAllowedField($field);
+
                         return SimpleField::field($field, $this->getDataValue($field));
                     }
 
                     $this->setAllowedField($field->getName());
                     $field->setValue($this->getDataValue($field->getName()));
                     $field->setStoredValue($this->model->{$field->getName()});
+
                     return $field;
                 }
             })
