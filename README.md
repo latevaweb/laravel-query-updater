@@ -8,6 +8,23 @@
 
 This package allows you to update fields and relations based on a request without losing data not send.
 
+## Installation
+
+This package can be used in Laravel 6.0 or higher.
+
+You can install the package via composer:
+
+`composer require latevaweb/query-updater`
+
+The service provider will automatically get registered. Or you may manually add the service provider in your config/app.php file:
+
+```php
+'providers' => [
+    // ...
+    LaTevaWeb\QueryUpdater\QueryUpdaterServiceProvider::class,
+];
+```
+
 ## Basic usage
 
 ### Update model field based on a `put` or `patch` request: `/users` params: `['name' => 'Marc']`:
@@ -24,7 +41,7 @@ public function __invoke(Request $request, User $user) {
 }
 ```
 
-### Update model field but keep default value if parameter is empty or null 
+### Update model field but keep stored value if parameter is empty or null 
 
 ```php
 use LaTevaWeb\QueryUpdater\QueryUpdater;
@@ -32,7 +49,7 @@ use LaTevaWeb\QueryUpdater\QueryUpdater;
 public function __invoke(Request $request, User $user) {
     $user = QueryUpdater::for($user)
         ->allowedFields([
-            KeepDefault::keep('name')
+            KeepStored::field('name')
         ])
         ->save();
         
@@ -42,4 +59,6 @@ public function __invoke(Request $request, User $user) {
 
 ## Run tests
 
-sqlite is required. Install it on ubuntu using `sudo apt-get install php-sqlite3`
+sqlite is required. Install it on ubuntu using `sudo apt-get install php7.4-sqlite3`.
+
+execute `vendor/bin/phpunit`
