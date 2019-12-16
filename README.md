@@ -14,7 +14,7 @@ This package can be used in Laravel 6.0 or higher.
 
 You can install the package via composer:
 
-`composer require latevaweb/query-updater`
+`composer require latevaweb/laravel-query-updater`
 
 The service provider will automatically get registered. Or you may manually add the service provider in your config/app.php file:
 
