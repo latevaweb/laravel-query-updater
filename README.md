@@ -1,10 +1,11 @@
 # Build Eloquent update queries from put API requests
 
-[![Code Quality](https://scrutinizer-ci.com/g/latevaweb/laravel-query-updater/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/latevaweb/laravel-query-updater/?branch=master)
+[![Quality Score](https://scrutinizer-ci.com/g/latevaweb/laravel-query-updater/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/latevaweb/laravel-query-updater/?branch=master)
 [![Code Coverage](https://scrutinizer-ci.com/g/latevaweb/laravel-query-updater/badges/coverage.png?b=master)](https://scrutinizer-ci.com/g/latevaweb/laravel-query-updater/?branch=master)
 [![Build Status](https://scrutinizer-ci.com/g/latevaweb/laravel-query-updater/badges/build.png?b=master)](https://scrutinizer-ci.com/g/latevaweb/laravel-query-updater/build-status/master)
 [![StyleCI](https://github.styleci.io/repos/227821179/shield?branch=master)](https://github.styleci.io/repos/227821179)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Laravel 6.x](https://img.shields.io/badge/Laravel-6.x-orange.svg)](http://laravel.com)
 
 This package allows you to update fields and relations based on a request without losing data not send.
 
