@@ -5,7 +5,7 @@ namespace LaTevaWeb\QueryUpdater;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Http\Request;
 use Illuminate\Support\Collection;
-use LaTevaWeb\QueryUpdater\Filter\AbstractField;
+use LaTevaWeb\QueryUpdater\Filter\AbstractFilter;
 use LaTevaWeb\QueryUpdater\Filter\SimpleFilter;
 
 class QueryUpdater
@@ -94,7 +94,7 @@ class QueryUpdater
                 }
             })
             ->filter(function ($field) {
-                return $field instanceof AbstractField;
+                return $field instanceof AbstractFilter;
             });
     }
 

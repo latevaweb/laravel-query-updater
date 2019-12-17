@@ -35,7 +35,7 @@ use LaTevaWeb\QueryUpdater\QueryUpdater;
 
 public function __invoke(Request $request, User $user) {
     QueryUpdater::for($user)
-        ->allowedFields(['name'])
+        ->updatedFields(['name'])
         ->save();
         
     // update
@@ -46,10 +46,11 @@ public function __invoke(Request $request, User $user) {
 
 ```php
 use LaTevaWeb\QueryUpdater\QueryUpdater;
+use LaTevaWeb\QueryUpdater\KeepStored;
 
 public function __invoke(Request $request, User $user) {
     QueryUpdater::for($user)
-        ->allowedFields([
+        ->updatedFields([
             KeepStored::field('name')
         ])
         ->save();
@@ -58,8 +59,17 @@ public function __invoke(Request $request, User $user) {
 }
 ```
 
+## Extending filters
+
+IF you have an special requirement that not fits with our filters `KeepStored` or `SimpleFilter`, 
+you can create your own extending `LaTevaWeb\QueryUpdater\Filter\AbstractFilter` class.
+
 ## Run tests
 
 sqlite is required. Install it on ubuntu using `sudo apt-get install php7.4-sqlite3`.
 
 execute `vendor/bin/phpunit`
+
+## License
+
+The MIT License (MIT). Please see [License File](LICENSE.md) for more information.

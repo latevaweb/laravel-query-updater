@@ -2,7 +2,7 @@
 
 namespace LaTevaWeb\QueryUpdater\Filter;
 
-class SimpleFilter extends AbstractField
+class SimpleFilter extends AbstractFilter
 {
     public function getValue()
     {

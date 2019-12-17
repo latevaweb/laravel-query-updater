@@ -2,7 +2,7 @@
 
 namespace LaTevaWeb\QueryUpdater\Filter;
 
-abstract class AbstractField
+abstract class AbstractFilter
 {
     protected $name;
     protected $value;

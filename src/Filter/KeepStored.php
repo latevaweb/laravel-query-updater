@@ -2,7 +2,7 @@
 
 namespace LaTevaWeb\QueryUpdater\Filter;
 
-class KeepStored extends AbstractField
+class KeepStored extends AbstractFilter
 {
     public function getValue()
     {
