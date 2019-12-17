@@ -1,6 +1,6 @@
 <?php
 
-namespace LaTevaWeb\QueryUpdater\Field;
+namespace LaTevaWeb\QueryUpdater\Filter;
 
 class KeepStored extends AbstractField
 {

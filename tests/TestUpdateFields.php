@@ -2,7 +2,7 @@
 
 namespace LaTevaWeb\QueryUpdater\Tests;
 
-use LaTevaWeb\QueryUpdater\Field\KeepStored;
+use LaTevaWeb\QueryUpdater\Filter\KeepStored;
 use LaTevaWeb\QueryUpdater\QueryUpdater;
 
 class TestUpdateFields extends TestCase

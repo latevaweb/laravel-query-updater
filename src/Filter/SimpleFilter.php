@@ -1,8 +1,8 @@
 <?php
 
-namespace LaTevaWeb\QueryUpdater\Field;
+namespace LaTevaWeb\QueryUpdater\Filter;
 
-class SimpleField extends AbstractField
+class SimpleFilter extends AbstractField
 {
     public function getValue()
     {

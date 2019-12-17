@@ -5,8 +5,8 @@ namespace LaTevaWeb\QueryUpdater;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Http\Request;
 use Illuminate\Support\Collection;
-use LaTevaWeb\QueryUpdater\Field\AbstractField;
-use LaTevaWeb\QueryUpdater\Field\SimpleField;
+use LaTevaWeb\QueryUpdater\Filter\AbstractField;
+use LaTevaWeb\QueryUpdater\Filter\SimpleFilter;
 
 class QueryUpdater
 {
@@ -83,7 +83,7 @@ class QueryUpdater
                     if (is_string($field)) {
                         $this->setAllowedField($field);
 
-                        return SimpleField::field($field, $this->getDataValue($field));
+                        return SimpleFilter::field($field, $this->getDataValue($field));
                     }
 
                     $this->setAllowedField($field->getName());
