@@ -34,7 +34,7 @@ The service provider will automatically get registered. Or you may manually add 
 use LaTevaWeb\QueryUpdater\QueryUpdater;
 
 public function __invoke(Request $request, User $user) {
-    $user = QueryUpdater::for($user)
+    QueryUpdater::for($user)
         ->allowedFields(['name'])
         ->save();
         
@@ -48,7 +48,7 @@ public function __invoke(Request $request, User $user) {
 use LaTevaWeb\QueryUpdater\QueryUpdater;
 
 public function __invoke(Request $request, User $user) {
-    $user = QueryUpdater::for($user)
+    QueryUpdater::for($user)
         ->allowedFields([
             KeepStored::field('name')
         ])
