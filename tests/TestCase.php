@@ -45,9 +45,9 @@ abstract class TestCase extends Orchestra
 
         // Create user to manage updates
         $this->user = User::create([
-           'name' => 'Marc',
-           'email' => 'marc@latevaweb.com',
-           'password' => bcrypt('secret'),
+            'name' => 'Marc',
+            'email' => 'marc@latevaweb.com',
+            'password' => bcrypt('secret'),
         ]);
     }
 }
