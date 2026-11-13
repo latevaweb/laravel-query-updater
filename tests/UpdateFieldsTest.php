@@ -5,7 +5,7 @@ namespace LaTevaWeb\QueryUpdater\Tests;
 use LaTevaWeb\QueryUpdater\Filter\KeepStored;
 use LaTevaWeb\QueryUpdater\QueryUpdater;
 
-class TestUpdateFields extends TestCase
+class UpdateFieldsTest extends TestCase
 {
     public function setUp(): void
     {
