@@ -29,7 +29,7 @@ abstract class AbstractFilter
     }
 
     /**
-     * @param string $name
+     * @param  string  $name
      */
     public function setName(string $name): void
     {
@@ -45,7 +45,7 @@ abstract class AbstractFilter
     }
 
     /**
-     * @param mixed $storedValue
+     * @param  mixed  $storedValue
      */
     public function setStoredValue($storedValue): void
     {

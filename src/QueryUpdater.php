@@ -52,12 +52,12 @@ class QueryUpdater
         return $this->model;
     }
 
-    private function allowedField(string $name = null): bool
+    private function allowedField(?string $name = null): bool
     {
         return in_array($name, $this->allowedFields);
     }
 
-    private function fieldExists(string $name = null): bool
+    private function fieldExists(?string $name = null): bool
     {
         return $this->model
             ->getConnection()
@@ -69,7 +69,6 @@ class QueryUpdater
      * Compose array of fields (string or object) to array of AbstractField objects.
      *
      * @param array
-     *
      * @return Collection
      */
     private function composeFields(array $fields = []): Collection
